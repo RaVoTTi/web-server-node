@@ -31,6 +31,14 @@ app.get('/generic',(req, res) => {
       titulo: 'Curso Node'
   })
   })
+  app.get('/login',(req, res) => {
+    res.render('login', {
+      nombre: 'Valentin Ravotti',
+      titulo: 'Curso Node'
+  })
+  })
+
+
 
 app.get('*',  (req, res) => {
     res.send('/public/404.html')
